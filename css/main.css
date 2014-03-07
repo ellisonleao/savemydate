@@ -310,7 +310,7 @@ section p.large {
    ============ */
 
     .main article {
-        float: left;
+        /*float: left;*/
         /*width: 100%*/;
         width: 1024px;
     }
