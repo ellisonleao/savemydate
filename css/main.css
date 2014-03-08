@@ -239,7 +239,10 @@ section p.large {
 
 }
 
-
+.share {
+  text-align: center;
+  margin-top: -35px;
+}
 
 /* ==========================================================================
    Media Queries
