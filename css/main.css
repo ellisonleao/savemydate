@@ -69,29 +69,6 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -159,9 +136,8 @@ nav a:hover {
 
 .footer-container {
   left: 0px;
-  position:fixed;
   bottom: 0px;
-  height: 100px;
+  height: 130px;
   width: 100%;
   background: url('../img/grasscenter.png') repeat;
   border-top:0;
@@ -192,7 +168,7 @@ article {
 
 .main article h1 {
   font-family: 'dosregular';
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -213,11 +189,11 @@ section p{
 }
 
 section p.medium {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 section p.large {
-  font-size:2em;
+  font-size:1em;
 }
 
 .main {
@@ -231,7 +207,7 @@ section p.large {
 }
 
 .logo img{
-  width: 300px;
+  width: 250px;
   margin-top: 3em;
   -webkit-box-shadow: 0 5px 10px #000;
      -moz-box-shadow: 0 5px 10px #000;
@@ -328,7 +304,10 @@ section p.large {
 
     }
 
-
+    .footer-container {
+      position:fixed;
+      height: 130px;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
