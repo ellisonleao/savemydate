@@ -192,7 +192,7 @@ article {
 
 .main article h1 {
   font-family: 'dosregular';
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1em;
 }
 
@@ -231,7 +231,7 @@ section p.large {
 }
 
 .logo img{
-  width: 200px;
+  width: 300px;
   margin-top: 3em;
   -webkit-box-shadow: 0 5px 10px #000;
      -moz-box-shadow: 0 5px 10px #000;
