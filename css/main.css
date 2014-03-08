@@ -192,7 +192,7 @@ article {
 
 .main article h1 {
   font-family: 'dosregular';
-  font-size: 4em;
+  font-size: 2em;
   line-height: 1em;
 }
 
@@ -231,6 +231,7 @@ section p.large {
 }
 
 .logo img{
+  width: 200px;
   margin-top: 3em;
   -webkit-box-shadow: 0 5px 10px #000;
      -moz-box-shadow: 0 5px 10px #000;
@@ -238,46 +239,11 @@ section p.large {
 
 }
 
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-    
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -310,8 +276,7 @@ section p.large {
    ============ */
 
     .main article {
-        /*float: left;*/
-        /*width: 100%*/;
+        margin: 0 auto;
         width: 1024px;
     }
 
@@ -319,6 +284,48 @@ section p.large {
         float: right;
         width: 28%;
     }
+
+    .main article h1 {
+      font-family: 'dosregular';
+      font-size: 4em;
+      line-height: 1em;
+    }
+
+    header {
+      text-align: center;
+      line-height: 1em;
+    }
+
+    .main section h1{
+      font-family: 'VT323', cursive;
+      line-height:0;
+      margin: 0;
+    }
+
+    section p{
+      font-size: 1em;
+      line-height:0.2em;
+    }
+
+    section p.medium {
+      font-size: 1.5em;
+    }
+
+    section p.large {
+      font-size:2em;
+    }
+
+    .logo img{
+      width: 550px;
+      height: 180px;
+      margin-top: 3em;
+      -webkit-box-shadow: 0 5px 10px #000;
+         -moz-box-shadow: 0 5px 10px #000;
+              box-shadow: 0 5px 10px #000;
+
+    }
+
+
 }
 
 @media only screen and (min-width: 1140px) {
