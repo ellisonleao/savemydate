@@ -180,7 +180,6 @@ article {
 .main article h1 {
   font-family: 'dosregular';
   font-size: 1em;
-  line-height: 1em;
 }
 
 header {
@@ -242,34 +241,6 @@ section p.very-large {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #F2F5FF;
-           -moz-box-shadow: 0 5px 10px #F2F5FF;
-                box-shadow: 0 5px 10px #F2F5FF;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
     .main {
       min-height: 1000px;
     }
@@ -287,7 +258,6 @@ section p.very-large {
     .main article h1 {
       font-family: 'dosregular';
       font-size: 4em;
-      line-height: 1em;
     }
 
     header {
@@ -320,8 +290,7 @@ section p.very-large {
     }
 
     .logo img{
-      width: 774px;
-      height: 288px;
+      width: 650px;
       margin-top: 3em;
     }
 
