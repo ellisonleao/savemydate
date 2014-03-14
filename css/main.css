@@ -70,41 +70,6 @@ body {
     margin: 0 5%;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
 .main {
     padding: 30px 0;
 }
@@ -138,8 +103,7 @@ nav a:hover {
 .footer-container {
   left: 0px;
   bottom: 0px;
-  position: fixed;
-  height: 100px;
+  height: 300px;
   width: 100%;
   background: url('../img/grasscenter.png') repeat;
   border-top:0;
@@ -225,14 +189,109 @@ section p.very-large {
   margin-top: 3em;
 }
 
-.share {
-  text-align: center;
-  margin-top: -35px;
-}
-
 .shadow {
   text-shadow: 3px 3px #000;
   color: #ffcc00;
+}
+
+.boxshadow {
+  -webkit-box-shadow: 2px 2px 0 1px #000;
+  -moz-box-shadow: 2px 2px 0 1px #000;
+  box-shadow: 2px 2px 0 1px #000;
+}
+
+#disqus_thread {
+  width: 100%;
+  color: #000;
+  margin-left: 30px;
+  background: #fff;
+  padding: 10px;
+}
+
+#disqus_thread a {
+  color: #ff9900;
+}
+
+#gifts {
+  height: 300px;
+}
+
+.place-container{
+  float: none;
+}
+
+.place {
+  background: #fff;
+  padding-bottom: 10px;
+  width: 300px;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 2px 0 1px #000;
+  -moz-box-shadow: 2px 2px 0 1px #000;
+  box-shadow: 2px 2px 0 1px #000;
+}
+
+.place img {
+  width: 200px;
+}
+
+nav ul {
+  height: 100px;
+  margin-top: -20px;
+}
+
+
+nav ul li{
+    display:inline-block;
+    background: #ff9900;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom:9px;
+    margin-bottom: 10px;
+    height: 20px;
+    margin-left: 1em;
+    -webkit-box-shadow: 2px 2px 0 1px #000;
+    -moz-box-shadow: 2px 2px 0 1px #000;
+    box-shadow: 2px 2px 0 1px #000;
+}
+
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-family: 'VT323', cursive;
+  font-size: 1em;
+}
+
+nav ul li, nav ul li::before, nav ul li::after {
+    background-color: #ff9900;
+}
+
+nav ul li::after {
+    -webkit-box-shadow: 2px 2px 0 1px #000;
+    -moz-box-shadow: 2px 2px 0 1px #000;
+    box-shadow: 2px 2px 0 1px #000;
+
+}
+
+nav ul li::before, nav ul li::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 5px;
+    top: 5px;
+}
+
+nav ul li::before {
+    left: -5px;
+}
+
+nav ul li::after {    
+    right: -5px;
+}  
+
+.large-line-height {
+  line-height: 15px;
 }
 
 /* ==========================================================================
@@ -293,6 +352,92 @@ section p.very-large {
       width: 650px;
       margin-top: 3em;
     }
+
+    #disqus_thread {
+      margin-left:0;
+      margin-top: 40px
+    }
+
+
+    .place-container{
+      float: left;
+    }
+
+    .place {
+      float:left;
+      width: 400px;
+      margin-bottom: 75px;
+      margin-left: 75px;
+      margin-top: 30px;
+    }
+
+    .place img {
+      width: 350px;
+    }
+
+    nav ul {
+      height: 100px;
+      margin-top: -20px;
+      text-align: center;
+    }
+
+    nav ul li{
+        display:inline-block;
+        background: #ff9900;
+        position: relative;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 20px;
+        height: 30px;
+        margin-left: 2em;
+        -webkit-box-shadow: 2px 2px 0 1px #000;
+        -moz-box-shadow: 2px 2px 0 1px #000;
+        box-shadow: 2px 2px 0 1px #000;
+    }
+
+    nav ul li a{
+      color: #000;
+      text-decoration: none;
+      font-family: 'VT323', cursive;
+      font-size: 1.5em;
+    }
+
+    nav ul li, nav ul li::before, nav ul li::after {
+        background-color: #ff9900;
+    }
+
+    nav ul li::after {
+        -webkit-box-shadow: 2px 2px 0 1px #000;
+        -moz-box-shadow: 2px 2px 0 1px #000;
+        box-shadow: 2px 2px 0 1px #000;
+
+    }
+
+    nav ul li::before, nav ul li::after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 5px;
+        top: 5px;
+    }
+
+    nav ul li::before {
+        left: -5px;
+    }
+
+    nav ul li::after {    
+        right: -5px;
+    }  
+
+    .footer-container {
+      position: fixed;
+      height: 100px;
+    }
+
+    .large-line-height {
+      line-height: 30px;
+    }
+
 
 }
 

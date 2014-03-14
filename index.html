@@ -51,6 +51,15 @@
           <li class="layer" data-depth="0.9">
           <header>
           <h1>(( <span class="shadow">RESERVE A DATA</span> ))</h1>
+            <div class="share">
+              <div class="fb-like" 
+                 data-href="https://ellisonleao.github.io/savemydate"
+                 data-layout="box_count"
+                 data-action="like"
+                 data-show-faces="true"
+                 data-share="false">
+              </div>
+            </div>
           </header>
           </li>
           </ul>
@@ -69,6 +78,59 @@
             </li>
            </ul>
           </section>
+          <br/>
+          <br/>
+          <section id="places">
+            <ul class="scene">
+              <li class="layer" data-depth="0.2">
+                <h1><span class="shadow">ONDE?</span></h1>
+                <br/>
+                <div class="places-container">
+                  <div class="place">
+                    <h2>CERIMÔNIA</h2>
+                    <img src="img/ipi.jpg"/>
+                    <p>Rua do Rosário, 218, Centro</p>
+                  </div>
+                  <div class="place">
+                    <h2>RECEPÇÃO</h2>
+                    <img src="img/mezza.png"/>
+                    <p>Av. Manoel Ribas, 5667, Santa Felicidade</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section> 
+          <div class="clearfix"> </div>
+          <section id="gifts">
+            <ul class="scene">
+              <li class="layer" data-depth="0.2">
+                <h1><span class="shadow">LISTA DE PRESENTES</span> </h1>
+                <br/>
+                <br/>
+                <h2>Nosso inventário ainda está sendo criado. Fiquem atentos ao site e aguardem novidades.</h2>
+
+                <h3>DOAÇÕES EM DINHEIRO</h3>
+                <p class="large-line-height">Caso deseje doar alguma quantia em dinheiro, nossa conta para depósito é</p>
+                <p class="shadow large large-line-height">
+                  Banco do Brasil<br/>
+                  Agência: 3186-0<br/>
+                  Conta Corrente: 24029-X<br/>
+                  Ellison Martins Saraiva Leão<br/>
+                </p>
+              </li>
+            </ul>
+          </section> 
+          <br/>
+          <br/>
+          <section id="comments">
+            <ul class="scene">
+              <li class="layer" data-depth="0.2">
+                <h1><span class="shadow">DEIXE UM RECADO PARA OS NOIVOS</span> </h1>
+              </li>
+            </ul>
+            <br/>
+            <div id="disqus_thread" class="boxshadow"></div>
+          </section> 
         </article>
 
       </div> <!-- #main -->
@@ -77,15 +139,13 @@
     <div class="footer-container">
       <div class="footer-top"></div>
       <footer class="wrapper">
-        <div class="share">
-          <div class="fb-like" 
-             data-href="https://ellisonleao.github.io/savemydate"
-             data-layout="box_count"
-             data-action="like"
-             data-show-faces="true"
-             data-share="false">
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#places">ONDE?</a></li>
+            <li><a href="#gifts">LISTA DE PRESENTES</a></li>
+            <li><a href="#comments">RECADINHOS</a></li>
+          </ul>
+        </nav>
       </footer>
     </div>
 
@@ -95,13 +155,22 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.parallax.min.js"></script>
     <script>
+      // analytics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-899823-10', 'ellisonleao.github.io');
       ga('send', 'pageview');
-    </script>
+      
+      // disqus
+      var disqus_shortname = 'savemydate'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
   </body>
 </html>
