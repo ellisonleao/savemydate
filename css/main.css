@@ -10,6 +10,11 @@ textarea {
     color: #222;
 }
 
+a:visited {
+	text-decoration:none;
+	color:#000;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -164,10 +169,12 @@ section p{
 
 section p.medium {
   font-size: 1em;
+  line-height: 30px;
 }
 
 section p.large {
   font-size:1em;
+  line-height: 30px;
 }
 
 section p.very-large {
@@ -286,9 +293,9 @@ nav ul li::before {
     left: -5px;
 }
 
-nav ul li::after {    
+nav ul li::after {
     right: -5px;
-}  
+}
 
 .large-line-height {
   line-height: 15px;
@@ -364,12 +371,17 @@ nav ul li::after {
     }
 
     .place {
-      float:left;
-      width: 400px;
-      margin-bottom: 75px;
-      margin-left: 75px;
-      margin-top: 30px;
+	float:left;
+	width: 400px;
+	margin-bottom: 75px;
+	margin-left: 75px;
+	margin-top: 30px;
+		min-height: 420px;
     }
+
+	.place-medium {
+		min-height: 300px;
+	}
 
     .place img {
       width: 350px;
@@ -425,9 +437,9 @@ nav ul li::after {
         left: -5px;
     }
 
-    nav ul li::after {    
+    nav ul li::after {
         right: -5px;
-    }  
+    }
 
     .footer-container {
       position: fixed;
