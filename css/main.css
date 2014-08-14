@@ -11,8 +11,8 @@ textarea {
 }
 
 a:visited {
-	text-decoration:none;
-	color:#000;
+    text-decoration:none;
+    color:#000;
 }
 
 body {
@@ -371,17 +371,17 @@ nav ul li::after {
     }
 
     .place {
-	float:left;
-	width: 400px;
-	margin-bottom: 75px;
-	margin-left: 75px;
-	margin-top: 30px;
-		min-height: 420px;
+         float:left;
+         width: 400px;
+         margin-bottom: 75px;
+         margin-left: 75px;
+         margin-top: 30px;
+         min-height: 420px;
     }
 
-	.place-medium {
-		min-height: 300px;
-	}
+    .place-medium {
+        min-height: 300px;
+    }
 
     .place img {
       width: 350px;
