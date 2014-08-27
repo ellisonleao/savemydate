@@ -301,11 +301,20 @@ nav ul li::after {
   line-height: 15px;
 }
 
+.clock {
+	display: none;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+
+	.clock {
+		display: block;
+		margin-left: 17% !important;
+	}
 
     .main {
       min-height: 1000px;
